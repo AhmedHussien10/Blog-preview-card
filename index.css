@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Figtree';
+  }
+  :root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+  }
+
+  body {
+    background-color: var(--yellow);
+    padding: 5rem 1rem;
+  }
+
+li{
+    list-style: none;
+}
+
+  .container {
+    background-color: var(--white);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 10px 10px black;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.container div:first-child img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+div h2 {
+    background-color: var(--yellow);
+    /* width: fit-content; */
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin: 10px;
+    display: inline-block;
+    margin: 1.5rem 0 1rem;
+    font-size: 1rem;
+}
+
+.published-at {
+    margin-bottom: 1rem;
+    color: var(--gray-500);
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.container h1 + p {
+    margin-bottom: 2rem;
+    color: var(--gray-500);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+@media (min-width: 768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 0;
+    }
+  }
+  
